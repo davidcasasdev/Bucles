@@ -18,9 +18,10 @@ public class Ejercicio1 {
 		Scanner teclado = new Scanner(System.in);
 		System.out.println("Tabla de multiplicar ");
 		
-		System.out.println("¿De qué número quieres la tabla (1-10)");
-		
-		tabla = teclado.nextInt();
+		do {
+			System.out.println("¿De qué número quieres la tabla (1-10)");
+			tabla = teclado.nextInt();
+		}while (tabla<1 || tabla>10);
 		
 		for(int i=1;i<=10;i++) {
 			System.out.printf("%d x %d = %d\n", tabla, i, tabla*i);

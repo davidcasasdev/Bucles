@@ -19,8 +19,11 @@ public class Ejercicio2 {
 		System.out.println("Tabla de multiplicar ");
 		
 		System.out.println("¿De qué número quieres la tabla (1-10)");
-		
 		tabla = teclado.nextInt();
+		while (tabla<1 || tabla >10) {
+			System.out.println("La tabla debe ser entre 1 y 10. Intenetalo de nuevo");
+			tabla=teclado.nextInt();
+		}
 		int i=1;
 		while(i<=10) {
 			System.out.printf("%d x %d = %d\n", tabla, i, tabla*i);
