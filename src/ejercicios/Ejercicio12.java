@@ -11,9 +11,9 @@ import java.util.Scanner;
  *
  */
 public class Ejercicio12 {
+		static Scanner teclado = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Scanner teclado = new Scanner(System.in);
 		System.out.println("Calculo número perfecto");
 		
 		System.out.println("Introduce un número: ");
